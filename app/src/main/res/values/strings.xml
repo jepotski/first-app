@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PN Calculator</string>
+    <string name="loan_type">Loan Type</string>
+    <string name="enter_loan_amount">Enter Loan Amount</string>
+    <string name="loan_term">Loan Term</string>
+    <string name="mode">Mode</string>
+    <string name="set_date_of_release">*set date of release</string>
+    <string name="calculate">Calculate</string>
+    <string name="mode_of_payment">Mode of Payment</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest">Interest</string>
+    <string name="lrf">LRF</string>
+    <string name="loan_proceeds">Loan Proceeds</string>
+    <string name="amortization">Amortization</string>
+    <string name="date_of_release">Date of Release</string>
+    <string name="first_payment">First Payment</string>
+    <string name="date_of_last_payment">Date of Last Payment</string>
+    <string name="date_of_first_payment">Date of First Payment</string>
+    <string name="last_payment">Last Payment</string>
+    <string name="back">Back</string>
+    <string name="exit">exit</string>
+
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/labelLoanType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_type"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/loanTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEnterAmount"
+        app:layout_constraintStart_toStartOf="@+id/editTextEnterAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnterAmount">
+
+        <TextView
+            android:id="@+id/labelLoanTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/loan_term"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/termSpinner"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/labelMode"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/modeSpinner"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/txtViewDateEntered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/set_date_of_release"
+        app:layout_constraintEnd_toEndOf="@+id/calendarView"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalculate"
+        app:layout_constraintStart_toStartOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewDateEntered"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/btnExit"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewDateEntered" />
+
+    <EditText
+        android:id="@+id/editTextEnterAmount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/enter_loan_amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:autofillHints="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtviewLoanType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/loan_type"
+            android:textAllCaps="false"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/txtViewLoanTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/loan_term"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewMOP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/mode"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/loan_amount"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/interest"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewLRF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/lrf"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewNetProceeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/loan_proceeds"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewAmort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/amortization"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewDateReleased"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/date_of_release"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewFirstPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/first_payment"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtViewLastPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#0000ff"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="@string/last_payment"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/resultLoanType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultLoanTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultLRF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultLoanProceeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultAmort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultDateRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultFirstPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultlastPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="@string/back"
+        android:onClick="backFunction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
